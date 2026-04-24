@@ -45,7 +45,6 @@ out/
 .*.swp
 
 # emacs
-*~
 \#*\#
 /.emacs.desktop
 /.emacs.desktop.lock
@@ -108,7 +107,6 @@ coverage.xml
 *.pot
 
 # Django stuff:
-*.log
 .static_storage/
 .media/
 local_settings.py
@@ -160,3 +158,5 @@ venv.bak/
 
 # mlflow local runs
 mlruns/*
+
+.lock
