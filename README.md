@@ -27,6 +27,27 @@ To install them, run:
 pip install -r requirements.txt
 ```
 
+## Pre-run data setup (Kaggle)
+
+This project expects the Kaggle competition data for
+`sentiment-analysis-on-movie-reviews` under `data/01_raw`.
+
+Authentication is configured with environment variables:
+
+```bash
+export KAGGLE_USERNAME="<your_kaggle_username>"
+export KAGGLE_KEY="<your_kaggle_api_key>"
+```
+
+Then run:
+
+```bash
+./scripts/download_kaggle_data.sh
+```
+
+The script downloads competition files into `data/01_raw`, extracts all `.zip`
+archives, and deletes the `.zip` files after extraction.
+
 ## How to run your Kedro pipeline
 
 You can run your Kedro project with:

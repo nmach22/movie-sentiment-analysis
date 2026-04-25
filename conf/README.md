@@ -18,6 +18,16 @@ WARNING: Please do not put access credentials in the base configuration folder.
 
 ## Instructions
 
+For Kaggle downloads, keep credentials out of source-controlled config files.
+Use shell environment variables instead:
+
+```bash
+export KAGGLE_USERNAME="<your_kaggle_username>"
+export KAGGLE_KEY="<your_kaggle_api_key>"
+```
+
+These variables are consumed by `kaggle` CLI and by
+`scripts/download_kaggle_data.sh`.
 
 
 

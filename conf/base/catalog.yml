@@ -2,3 +2,20 @@
 #
 # Documentation for this file format can be found in "The Data Catalog"
 # Link: https://docs.kedro.org/en/stable/catalog-data/introduction/#data-catalog
+
+train_reviews:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/train.tsv
+  load_args:
+    sep: "\t"
+
+test_reviews:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/test.tsv
+  load_args:
+    sep: "\t"
+
+sample_submission:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/sampleSubmission.csv
+
